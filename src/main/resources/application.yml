@@ -16,6 +16,6 @@ spring:
           use_jdbc_metadata_defaults: false
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
   datasource:
-    url: jdbc:postgresql://localhost:5432/pdv
+    url: jdbc:postgresql://localhost:5432/test
     username: postgres
     password: 123456
