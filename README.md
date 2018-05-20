@@ -1,0 +1,2 @@
+# TestsKotlinGraphQL
+Repository to study
