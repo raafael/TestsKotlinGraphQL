@@ -1,0 +1,22 @@
+type Query {
+    # The API Version
+    version: String!
+}
+
+type UserDTO {
+id: ID!
+name: String!
+lastName: String!
+addressess: [AddressDTO]
+}
+
+type AddressDTO {
+id: ID!
+street: String!
+zipCode: String!
+number: Long!
+}
+
+extend type Query {
+    getUserById(id: ID!) : UserDTO
+}

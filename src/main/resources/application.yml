@@ -1,0 +1,21 @@
+#graphql:
+#      servlet:
+#               mapping: /graphql
+#               enabled: true
+#               corsEnabled: true
+#https://docs.spring.io/spring-boot/docs/1.4.2.RELEASE/reference/htmlsingle/#common-application-properties
+spring:
+  jpa:
+    show-sql: true
+    open-in-view: false # Register OpenEntityManagerInViewInterceptor. Binds a JPA EntityManager to the thread for the entire processing of the request
+    hibernate:
+      ddl-auto: create-drop
+    properties: # configurações a baixo devido ao chamado https://hibernate.atlassian.net/browse/HHH-12368
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pdv
+    username: postgres
+    password: 123456
