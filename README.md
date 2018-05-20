@@ -6,14 +6,17 @@ Repository to study
 http://localhost:8080/graphiql
 
 1- Sample Query
+```
 {
       getUserById(id:"1") {
     		id
         name
     }
 }
+```
 
 2- Query with relationship
+```
 {
       getUserById(id:"1") {
     		id
@@ -25,3 +28,4 @@ http://localhost:8080/graphiql
 
     }
 }
+```
